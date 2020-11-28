@@ -1,0 +1,16 @@
+<mat-card class="wa-auth-content" [formGroup]="authForm">
+    <h1 class="mat-h1">Authentication</h1>
+    <p>
+        <mat-form-field appearance="fill" >
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="example@example.com">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill" >
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+        </mat-form-field>
+    </p>
+    <button mat-flat-button color="primary" (click)="submit()">Sign in</button>
+</mat-card>
